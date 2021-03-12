@@ -3,7 +3,7 @@
 // Developed by Nivaldo T. Schiefler Jr.  Dr eng.
 // Build under XC8 compiler
 // 09/04/2019 
-// Updates: 
+// Updates: 12/03/2021
 
 //******************************************************************************
 /*
@@ -12,8 +12,8 @@
   void write_text_UART(char *text);
   char read_UART(void);
   void read_text_UART(char *read_text, unsigned int text_size);
-  char TX_UART_empty(void);
-  char UART_data_Ready(void);
+  char TX_empty_UART(void);
+  char data_Ready_UART(void);
  */
 //******************************************************************************
 
