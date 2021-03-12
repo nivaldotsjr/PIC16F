@@ -85,7 +85,7 @@ void write_text_lcd2L(char *text_in,unsigned int row_in,unsigned int column_in)
   else
       position = 0xC0;
   //********************************************
-  end_position = position + column_in;
+  end_position = position + (char)column_in;
   templ = (char)(end_position & 0x0F);
   temph = (char)(end_position & 0xF0); 
   comand_lcd2L(temph >> 4);
@@ -121,7 +121,7 @@ void write_char_lcd2L(char char_in,unsigned int row_in,unsigned int column_in)
   else
       position = 0xC0;
   //*************************************
-  end_position = position + column_in;
+  end_position = position + (char)column_in;
   templ = (char)(end_position & 0x0F);
   temph = (char)(end_position & 0xF0); 
   comand_lcd2L(temph >> 4);
